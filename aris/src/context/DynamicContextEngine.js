@@ -1,0 +1,93 @@
+export const CONTEXTS = {
+  UNKNOWN: {
+    id: 'UNKNOWN',
+    type: 'Neutral',
+    leftTitle: 'Environmental Context',
+    leftText: 'Scan result incomplete. Awaiting optimal stabilization.',
+    rightTitle: 'Object Analysis',
+    rightConfidence: '45%',
+    rightCategory: 'Unknown signature',
+    rightImpact: 'Low',
+    centerMessage: 'Analyzing surroundings...',
+    centerColor: 'text-white',
+    icon: 'Scan'
+  },
+  LOW_CONF: {
+    id: 'LOW_CONF',
+    type: 'Neutral',
+    leftTitle: 'Telemetry Alert',
+    leftText: 'Scan result incomplete. Please adjust perspective or rescan.',
+    rightTitle: 'System Alert',
+    rightConfidence: '< 30%',
+    rightCategory: 'Unknown',
+    rightImpact: 'Uncertain',
+    centerMessage: 'Low confidence. Refine scan?',
+    centerColor: 'text-white/60',
+    icon: 'Scan'
+  },
+  FOOD: {
+    id: 'FOOD',
+    type: 'Advisory',
+    leftTitle: 'Dietary Advisory',
+    leftText: 'Intake threshold nearing limit based on established metrics.',
+    rightTitle: 'Consumption Analysis',
+    rightConfidence: '92%',
+    rightCategory: 'High Caloric Density',
+    rightImpact: 'Elevated Glycemic',
+    centerMessage: 'Dietary threshold approaching',
+    centerColor: 'text-aris-red',
+    icon: 'Activity'
+  },
+  BEVERAGE: {
+    id: 'BEVERAGE',
+    type: 'Guidance',
+    leftTitle: 'Hydration Tracking',
+    leftText: 'Optimal fluid intake recommended to maintain focus levels.',
+    rightTitle: 'Liquid Assessment',
+    rightConfidence: '88%',
+    rightCategory: 'Caffeinated Beverage',
+    rightImpact: 'Stimulant',
+    centerMessage: 'Caffeine intake noted',
+    centerColor: 'text-aris-cyan',
+    icon: 'Coffee'
+  },
+  ROAD: {
+    id: 'ROAD',
+    type: 'Guidance',
+    leftTitle: 'Route Summary',
+    leftText: 'Route alignment stable. Commute pacing is optimal.',
+    rightTitle: 'Navigation Target',
+    rightConfidence: '98%',
+    rightCategory: 'Paved Path',
+    rightImpact: 'Clear Path',
+    centerMessage: 'Navigational alignment stable',
+    centerColor: 'text-white',
+    icon: 'Map'
+  },
+  WORKSTATION: {
+    id: 'WORKSTATION',
+    type: 'Focus',
+    leftTitle: 'Posture Reminder',
+    leftText: 'Ergonomic alignment drifting. Suggest ocular reset in 10 mins.',
+    rightTitle: 'Screen Exposure',
+    rightConfidence: '95%',
+    rightCategory: 'Monitor / Display',
+    rightImpact: 'Visual Strain',
+    centerMessage: 'Focus disruption detected',
+    centerColor: 'text-aris-cyan',
+    icon: 'Eye'
+  },
+  MEDICINE: {
+    id: 'MEDICINE',
+    type: 'Warning',
+    leftTitle: 'Prescription Tracking',
+    leftText: 'Environmental caution active. Verify dosage parameters.',
+    rightTitle: 'Chemical Identification',
+    rightConfidence: '89%',
+    rightCategory: 'Pharmaceutical',
+    rightImpact: 'Critical',
+    centerMessage: 'Verify dosage limits',
+    centerColor: 'text-aris-red',
+    icon: 'AlertTriangle'
+  }
+};

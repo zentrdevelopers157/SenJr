@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id    String @id @default(uuid())
+  email String @unique
+  name  String?
+  cart  Cart?
+}
+
+model Product {
+  id              String   @id @default(uuid())
+  name            String
+  category        String
+  description     String?
+  price           Float
+  mainGlbUrl      String
+  dressVariations String[] // Array of 5 strings for variations
+  assets          ClothingAsset[]
+  cartItems       CartItem[]
+}
+
+enum ProductType {
+  TSHIRT
+  TROUSERS
+  HOODIE
+}
+
+model ClothingAsset {
+  id          String   @id @default(uuid())
+  name        String
+  glbUrl      String
+  textureUrl  String?
+  isTrending  Boolean  @default(false)
+  productId   String
+  product     Product  @relation(fields: [productId], references: [id])
+}
+
+model Cart {
+  id      String     @id @default(uuid())
+  user    User       @relation(fields: [userId], references: [id])
+  userId  String     @unique
+  items   CartItem[]
+}
+
+model CartItem {
+  id        String @id @default(uuid())
+  cartId    String
+  cart      Cart   @relation(fields: [cartId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int    @default(1)
+}

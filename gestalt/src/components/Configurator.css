@@ -1,0 +1,27 @@
+.configurator { display: flex; flex-direction: column; gap: 22px; }
+
+.config-field { display: flex; flex-direction: column; gap: 10px; }
+.config-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+  color: var(--text-secondary);
+}
+.config-options { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.config-opt {
+  padding: 8px 16px; border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-glass);
+  color: var(--text-secondary);
+  font-size: 0.82rem; font-weight: 500;
+  cursor: pointer; transition: var(--transition-fast);
+}
+.config-opt:hover {
+  border-color: rgba(201,168,76,0.5); color: var(--text-primary);
+  background: rgba(201,168,76,0.06);
+}
+.config-opt.selected {
+  background: rgba(201,168,76,0.15);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  box-shadow: 0 0 12px rgba(201,168,76,0.25);
+}
