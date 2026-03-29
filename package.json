@@ -1,8 +1,41 @@
 {
+  "name": "senjr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^7.0.7",
+    "@daily-co/daily-js": "^0.89.1",
+    "@sentry/nextjs": "^10.46.0",
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.100.1",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.37.0",
+    "@vercel/postgres": "^0.10.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.577.0",
+    "next": "16.2.1",
+    "pg": "^8.20.0",
+    "posthog-js": "^1.364.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "resend": "^6.9.4",
+    "svix": "^1.89.0",
+    "tailwind-merge": "^3.5.0"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.4.27",
-    "lucide-react": "^1.6.0",
-    "postcss": "^8.5.8",
-    "tailwindcss": "^4.2.2"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

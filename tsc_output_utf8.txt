@@ -1,0 +1,6 @@
+﻿src/app/(app)/dashboard/mentor/page.tsx(63,58): error TS2307: Cannot find module '@/app/actions/demo' or its corresponding type declarations.
+src/app/(app)/dashboard/student/page.tsx(85,58): error TS2307: Cannot find module '@/app/actions/demo' or its corresponding type declarations.
+src/components/ui/Navbar.tsx(6,24): error TS2307: Cannot find module '@/app/actions/auth' or its corresponding type declarations.
+src/components/WaitlistForm.tsx(4,30): error TS2307: Cannot find module '@/app/actions/waitlist' or its corresponding type declarations.
+src/lib/supabase.ts(2,21): error TS2307: Cannot find module '@/lib/env' or its corresponding type declarations.
+

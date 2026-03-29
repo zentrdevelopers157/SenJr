@@ -1,0 +1,277 @@
+﻿
+> senjr@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.2.1 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpeci    fied: 
+(:String) [    ], 
+RemoteExceptio    n
+    + FullyQualifiedE    
+rrorId : NativeCo    
+mmandError
+ 
+> Build error occurred
+Error: Turbopack build 
+failed with 4 errors:
+./src/components/ui/Navbar
+.tsx:6:1
+Module not found: Can't 
+resolve 
+'@/app/actions/auth'
+  [90m4 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m 
+[32m'./Button'[0m;
+  [90m5 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/util
+s/supabase/client'[0m;
+[31m[1m>[0m [90m6 
+|[0m [36mimport[0m { 
+logout } [36mfrom[0m [3
+2m'@/app/actions/auth'[0m
+;
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+useEffect, useState } 
+[36mfrom[0m 
+[32m'react'[0m;
+  [90m8 |[0m
+  [90m9 |[0m 
+[36mexport[0m 
+[36mfunction[0m 
+[33mNavbar[0m() {
+
+Import map: aliased to 
+relative 
+'./src/app/actions/auth' 
+inside of [project]/
+
+
+Import traces:
+  Server Component:
+    ./src/components/ui/Na
+vbar.tsx
+    
+./src/app/(app)/layout.tsx
+
+  Client Component 
+Browser:
+    ./src/components/ui/Na
+vbar.tsx [Client 
+Component Browser]
+    ./src/app/(app)/mentor
+s/page.tsx [Client 
+Component Browser]
+    ./src/app/(app)/mentor
+s/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./src/components/ui/Na
+vbar.tsx [Client 
+Component SSR]
+    ./src/app/(app)/mentor
+s/page.tsx [Client 
+Component SSR]
+    ./src/app/(app)/mentor
+s/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./src/app/(app)/dashboard/
+mentor/page.tsx:63:51
+Module not found: Can't 
+resolve 
+'@/app/actions/demo'
+  [90m61 |[0m 
+...ion={[36masync[0m () 
+=> {
+  [90m62 |[0m 
+...[32mrver'[0m;
+[31m[1m>[0m [90m63 
+|[0m ... 
+clearDemoRequests } = 
+[36mawait[0m [36mimport
+[0m([32m'@/app/actions/d
+emo'[0m);
+  [90m   |[0m           
+                      [31
+m[1m^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m64 |[0m 
+...learDemoRequests();
+  [90m65 |[0m ...
+  [90m66 |[0m ... [36mt
+ype[0m=[32m"submit"[0m 
+className=[32m"w-full 
+h-12 px-6 border 
+border-red-500/30 
+text-red-500 bg-red...[0m
+
+Import map: aliased to 
+relative 
+'./src/app/actions/demo' 
+inside of [project]/
+
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./src/app/(app)/dashboard/
+student/page.tsx:85:51
+Module not found: Can't 
+resolve 
+'@/app/actions/demo'
+  [90m83 |[0m 
+...ion={[36masync[0m () 
+=> {
+  [90m84 |[0m 
+...[32mrver'[0m;
+[31m[1m>[0m [90m85 
+|[0m ... 
+clearDemoRequests } = 
+[36mawait[0m [36mimport
+[0m([32m'@/app/actions/d
+emo'[0m);
+  [90m   |[0m           
+                      [31
+m[1m^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^[0m
+  [90m86 |[0m 
+...learDemoRequests();
+  [90m87 |[0m ...
+  [90m88 |[0m ... [36mt
+ype[0m=[32m"submit"[0m 
+className=[32m"w-full 
+h-12 px-6 border 
+border-red-500/30 
+text-red-500 bg-red...[0m
+
+Import map: aliased to 
+relative 
+'./src/app/actions/demo' 
+inside of [project]/
+
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./src/components/WaitlistF
+orm.tsx:4:1
+Module not found: Can't 
+resolve 
+'@/app/actions/waitlist'
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+useState } [36mfrom[0m 
+[32m'react'[0m;
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+joinWaitlist } 
+[36mfrom[0m [32m'@/app/
+actions/waitlist'[0m;
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m5 |[0m
+  [90m6 |[0m 
+[36mconst[0m 
+[33mCATEGORY_GROUPS[0m 
+= [
+  [90m7 |[0m   { group: 
+[32m'≡ƒôÜ Competitive 
+Exams'[0m, items: 
+[[32m'UPSC / IAS'[0m, 
+[32m'JEE / NEET'[0m, 
+[32m'CAT / MBA 
+Entrance'[0m...
+
+Import map: aliased to 
+relative './src/app/action
+s/waitlist' inside of 
+[project]/
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./src/components/Waitl
+istForm.tsx [Client 
+Component Browser]
+    ./src/components/Landi
+ngPage.tsx [Client 
+Component Browser]
+    ./src/components/Landi
+ngPage.tsx [Server 
+Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./src/components/Waitl
+istForm.tsx [Client 
+Component SSR]
+    ./src/components/Landi
+ngPage.tsx [Client 
+Component SSR]
+    ./src/components/Landi
+ngPage.tsx [Server 
+Component]
+    ./src/app/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+    at <unknown> (./src/co
+mponents/ui/Navbar.tsx:6:1
+)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./src/ap
+p/(app)/dashboard/mentor/p
+age.tsx:63:51)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./src/ap
+p/(app)/dashboard/student/
+page.tsx:85:51)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./src/co
+mponents/WaitlistForm.tsx:
+4:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+

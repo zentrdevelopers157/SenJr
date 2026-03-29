@@ -1,8 +1,0 @@
-{
-  "protectionBypass": {
-    "vercelAuthentication": "disabled"
-  },
-  "deploymentProtection": {
-    "vercelAuthentication": "disabled"
-  }
-}

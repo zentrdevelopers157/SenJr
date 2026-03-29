@@ -1,0 +1,101 @@
+﻿node.exe : Retrieving 
+projectΓÇª
+At C:\Users\lenovo\App
+Data\Roaming\npm\verce
+l.ps1:24 char:5
++     & "node$exe"  "$
+basedir/node_modules/v
+ercel/dist/vc.js" 
+$args
++     ~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo    
+          : 
+NotSpecified: (R    
+etrieving projectΓÇª: 
+   String) [], 
+RemoteExc    eption
+    + 
+FullyQualifiedError   
+ Id : 
+NativeCommandErr    or
+ 
+Deploying zentropques-
+projects/senjr
+Uploading [-----------
+---------] 
+(0.0B/253.7KB)
+Uploading [=====------
+---------] 
+(68.8KB/253.7KB)
+Uploading [===========
+---------] 
+(142.3KB/253.7KB)
+Uploading [===========
+====-----] 
+(202.0KB/253.7KB)
+Uploading [===========
+=========] 
+(253.7KB/253.7KB)
+Inspect: https://verce
+l.com/zentropques-proj
+ects/senjr/ANBxXRw5rcg
+ApsqFK4PyHGP9u8EG [5s]
+Production: https://se
+njr-d2u8jxaso-zentropq
+ues-projects.vercel.ap
+p [5s]
+Building...
+Building...
+Building: Running 
+build in Washington, 
+D.C., USA (East) ΓÇô 
+iad1
+Building: Build 
+machine 
+configuration: 2 
+cores, 8 GB
+Building: Retrieving 
+list of deployment 
+files...
+Building: Downloading 
+85 deployment files...
+Building: Restored 
+build cache from 
+previous deployment (G
+4y46MxKzrz8uNDXrVM8nWV
+gJd6X)
+Building: Running 
+"vercel build"
+Building: Vercel CLI 
+50.37.1
+Building: Installing 
+dependencies...
+Building: up to date 
+in 852ms
+Building: 149 
+packages are looking 
+for funding
+Building: run `npm 
+fund` for details
+Building: Detected 
+Next.js version: 
+16.2.1
+Building: Running 
+"npm run build"
+Building: > 
+senjr@0.1.0 build
+Building: > next build
+Building: Γû▓ Next.js 
+16.2.1 (Turbopack)
+Building: Creating an 
+optimized production 
+build ...
+Building: Γ£ô 
+Compiled successfully 
+in 8.8s
+Building: Running 
+TypeScript ...
+
